@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="200060201"
+    android:versionName="2.6.201"
+    android:compileSdkVersion="34"
+    android:compileSdkVersionCodename="14"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="com.sankuai.sailor.courier"
+    platformBuildVersionCode="34"
+    platformBuildVersionName="14">
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34"/>
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+    </queries>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.RUN_USER_INITIATED_JOBS"/>
+    <queries>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.autonavi.minimap"/>
+        <package android:name="com.baidu.BaiduMap"/>
+        <package android:name="com.waze"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <permission android:name="android.permission.INTERNET"/>
+    <permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.hihonor.security.permission.ACCESS_THREAT_DETECTION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application
+        android:theme="@style/Theme.Ocean_android_app"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_courier"
+        android:name="com.sankuai.sailor.launcher.SailorApplication"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_courier_round"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <meta-data
+            android:name="mtguard_appkey"
+            android:value="e24fa5fc-8377-4808-8a91-583691a1652b"/>
+        <meta-data
+            android:name="mtguard_pic"
+            android:value="ms_com.sankuai.sailor.courier.png"/>
+        <meta-data
+            android:name="mtguard_sec"
+            android:value="ppd_com.sankuai.sailor.courier.xbt"/>
+        <activity
+            android:theme="@style/AppTheme.Welcome"
+            android:label="@string/app_name"
+            android:name="com.sankuai.sailor.shell.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="sailord"
+                    android:host="push.uri.default"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sankuai.sailor.shell.push.PushNotifyTransActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.sankuai.sailor.shell.UriProxyActivity"
+            android:exported="true"
+            android:taskAffinity="com.sankuai.sailor.courier">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="sailord"
+                    android:host="keeta.com"
+                    android:pathPattern="/courierTransfer/.*"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.sankuai.sailor.shell.push.OceanPushTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_TOKEN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sankuai.sailor.shell.push.ConcretePushMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_PASS_THROUGH_MESSAGE"/>
+                <action android:name="com.sankuai.sailor.polling"/>
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="build_num"
+            android:value="3682"/>
+        <meta-data
+            android:name="APP_NAME"
+            android:value="SailorCourier"/>
+        <meta-data
+            android:name="OVER_SEA_KEY_META"
+            android:value="mf6584d8786542ff976fe1c75dd8e25n"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCpkZmjHgWPJx2-kxCS-mJtTVO-0_aoFms"/>
+        <service
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.locate.courier.daemon.DaemonService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":daemon"
+            android:foregroundServiceType="location">
+            <intent-filter>
+                <action android:name="DaemonService.daemon"/>
+                <action android:name="DaemonService.updateBaseUrl"/>
+                <action android:name="DaemonService.updateToken"/>
+                <action android:name="DaemonService.reportLocationOnce"/>
+                <action android:name="DaemonService.start"/>
+                <action android:name="DaemonService.stop"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.client.id"
+            android:value="765562246590-6jhsl2b85h7kbhivniv4vil3vff8fle9.apps.googleusercontent.com"/>
+        <activity
+            android:theme="@style/Sailor_NoActionBar"
+            android:name="com.sankuai.sailor.homepage.CourierMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Sailor_NoActionBar"
+            android:name="com.sankuai.sailor.homepage.orderlist.CourierOrderListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <activity
+            android:theme="@style/Sailor_NoActionBar"
+            android:name="com.sankuai.sailor.homepage.NewTaskActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/Sailor_NoActionBar"
+            android:name="com.sankuai.sailor.homepage.deliver.DeliverMPActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.homepage.view.guide.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.homepage.view.dialog.TransDialogActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.homepage.view.dialog.CourierTransDialogActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.inspection.InspectionCameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.inspection.FaceInspectionCameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:theme="@style/BaseUI.AppTheme.Translucent"
+            android:name="com.sankuai.sailor.inspection.EquipmentInspectionCameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_image_path"/>
+        </provider>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.sankuai.sailor.oversea.im.push.IMBridgeActivity"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+        <receiver
+            android:name="com.sankuai.sailor.infra.middleware.push.receiver.PushTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_TOKEN"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.fooddelivery.knb.KNBWebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="sailorc"
+                    android:host="keeta.com"
+                    android:path="/browser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.meituan.android.intent.action.knbwebview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.fooddelivery.mach.container.SailorMPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="sailorc"
+                    android:host="keeta.com"
+                    android:path="/machpro"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.fooddelivery.knb.WebViewActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="sailorc"
+                    android:host="keeta.com"
+                    android:path="/outsidelinks"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.fooddelivery.mach.container.QRScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboard"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.sankuai.sailor.infra.contianer.knb.BaseKNBWebViewActivity"
+            android:exported="true"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="sailord"
+                    android:host="keeta.com"
+                    android:path="/browser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.meituan.android.intent.action.knbwebview"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.locate.courier.report.LocationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.sailor.courier.location.data.changed"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.locate.courier.daemon.DaemonBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="DaemonService.daemon"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.locate.courier.daemon.NotifyTransActivity"
+            android:exported="false"/>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.account.RegionSelectActivity"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.sankuai.sailor.baseadapter.extension.courier.mach.container.SailorMPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="sailord"
+                    android:host="keeta.com"
+                    android:path="/machpro"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meituan.passport.UserLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="passport"
+                    android:host="www.meituan.com"
+                    android:path="/login"/>
+                <data
+                    android:scheme="passport"
+                    android:host="www.meituan.com"
+                    android:path="/login/"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meituan.passport.mach.PassportMPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="passport"
+                    android:host="keeta.com"
+                    android:path="/machpro"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.meituan.passport.process.PassportContentProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.PassportContentProvider"/>
+        <activity
+            android:theme="@style/YodaThemeBase"
+            android:name="com.meituan.android.yoda.activity.YodaConfirmActivity"
+            android:exported="true"
+            android:multiprocess="true"
+            android:screenOrientation="portrait"
+            android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:supportsRtl="true">
+            <intent-filter>
+                <data
+                    android:scheme="yoda"
+                    android:host="www.mykeeta.com"
+                    android:path="/verify"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/YodaThemeBase"
+            android:label="yoda"
+            android:name="com.meituan.android.yoda.activity.YodaKNBActivity"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:theme="@style/YodaThemeTransparent"
+            android:name="com.meituan.android.yoda.activity.YodaRouterTransparentActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <data
+                    android:scheme="yoda"
+                    android:host="www.mykeeta.com"
+                    android:path="/v2/verify"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="xm_sdk_integration_i18n"
+            android:value="com.sankuai.xm.integration.i18n.I18nImpl"/>
+        <activity
+            android:name="com.sankuai.android.diagnostics.library.DiagnosticActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:inputType="textMultiLine"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/diagnose"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.meituan.android.mrn.container.MRNBaseActivity"
+            android:screenOrientation="portrait"/>
+        <service
+            android:name="com.meituan.banma.matrix.waybill.WaybillDaemonService"
+            android:process=":daemon"
+            android:foregroundServiceType="location"/>
+        <service
+            android:name="com.meituan.banma.matrix.ipc.aidl.IPCService"
+            android:process=":daemon"/>
+        <service
+            android:name="com.meituan.banma.matrix.collect.sensor.activity.ActivityMonitor.ActivityRecognitionService"
+            android:exported="false"
+            android:process=":daemon"/>
+        <provider
+            android:name="com.meituan.banma.matrix.base.link.storage.IotContentProvider"
+            android:process=":daemon"
+            android:authorities="com.sankuai.sailor.courier.iotlink.provider"/>
+        <activity
+            android:name="com.sankuai.waimai.machpro.container.MPActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data
+            android:name="xm_sdk_service_registry_mtmediatool"
+            android:value="com.sankuai.xm.integration.mediapicker.MediaToolRegistry"/>
+        <meta-data
+            android:name="com.amap.api.v2.apikey_staic_map_xm_sdk"
+            android:value="55532b864ec015939bc0f18edf4359f9"/>
+        <meta-data
+            android:name="xm_sdk_service_registry_ui"
+            android:value="com.sankuai.xm.ui.service.internal.UIServiceRegistry"/>
+        <activity
+            android:theme="@style/XmSdkTheme"
+            android:name="com.sankuai.xm.imui.session.SessionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity
+            android:theme="@style/XmSdkTheme"
+            android:name="com.sankuai.xm.imui.session.SessionOrientationActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <provider
+            android:name="com.sankuai.xm.imui.DxFileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.DxFileProvider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/xm_sdk_media_path"/>
+        </provider>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:label="SurfaceActivity"
+            android:name="com.sankuai.xm.video.PlayVideoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:name="com.sankuai.xm.video.RecordVideoActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <provider
+            android:name="com.meituan.android.loader.impl.provider.LoadStatusProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.LoadStatusProvider"/>
+        <activity
+            android:theme="@style/PermissionTransparentActivity"
+            android:name="com.meituan.android.privacy.impl.permission.PermissionGuardDialogActivity"
+            android:exported="false"
+            android:multiprocess="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/permission/dialog"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/PermissionTransparentActivity"
+            android:name="com.meituan.android.privacy.impl.permission.AppGuardPermissionDialogAct"
+            android:exported="false"
+            android:multiprocess="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/appguard/dialog"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.meituan.android.mrn.component.mrnwebview.MRNWebViewFileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.mrnwebview.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider
+            android:name="com.sankuai.titans.base.listeners.KNBFileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.kfp"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/knb_file_provider_paths"/>
+        </provider>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name="com.sankuai.titans.widget.media.MediaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.sankuai.titans.widget.mediapicker"/>
+                <action android:name="com.sankuai.titans.widget.mediaplayer"/>
+                <action android:name="com.sankuai.titans.widget.mediapreview"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.sankuai.titans.widget.media.PhotoFileProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.titans.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/__picker_provider_paths"/>
+        </provider>
+        <meta-data
+            android:name="xm_sdk_integration_image_loader"
+            android:value="com.sankuai.xm.integration.picassov1.PicassoModelLoader"/>
+        <service
+            android:name="com.dianping.fcm.NovaFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true"/>
+        <receiver
+            android:name="com.dianping.base.push.pushservice.PushStartReceiver"
+            android:exported="true"
+            android:process=":dppushservice">
+            <intent-filter>
+                <action android:name="com.dianping.action.PUSH_START"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.dianping.base.push.pushservice.dp.DPPushService"
+            android:exported="true"
+            android:process=":dppushservice">
+            <intent-filter>
+                <action android:name="com.dianping.action.PUSHSERVICE"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.dianping.base.push.pushservice.PushWakeUpJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"
+            android:process=":dppushservice"/>
+        <service
+            android:name="com.dianping.base.push.pushservice.PushStartService"
+            android:exported="false"
+            android:process=":dppushservice">
+            <intent-filter>
+                <action android:name="com.dianping.action.PUSH_START_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@style/push_transparent_style"
+            android:name="com.dianping.base.push.pushservice.HWPushDetailActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="dpmtpush"
+                    android:host="com.sankuai.sailor.courier"
+                    android:path="/push"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="dpmtpush.action.oppopush"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.CLICK_NOTIFICATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.meituan.android.common.statistics.ipc.LeaderService"
+            android:enabled="true"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.Light"
+            android:name="com.sankuai.meituan.oauth.OauthLoginActivity"/>
+        <meta-data
+            android:name="xm_sdk_service_registry_imextra"
+            android:value="com.sankuai.xm.imextra.IMExtra"/>
+        <meta-data
+            android:name="xm_sdk_service_registry_imlib"
+            android:value="com.sankuai.xm.im.IMLibRegistry"/>
+        <meta-data
+            android:name="xm_sdk_service_registry_recorder"
+            android:value="com.sankuai.xm.recorder.RecorderServiceRegistry"/>
+        <meta-data
+            android:name="xm_sdk_service_registry"
+            android:value="com.sankuai.xm.base.service.CommonServiceRegistry"/>
+        <provider
+            android:name="com.sankuai.xm.base.IMToolsInstaller"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.IMToolsInstaller"/>
+        <activity
+            android:theme="@style/SafeModeTheme.Fullscreen"
+            android:name="com.meituan.metrics.SafeModeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:theme="@style/UpgradeTransparentActivity"
+            android:name="com.meituan.android.upgrade.UpgradeDialogActivity"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/tfkit/show"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.dianping.networklog.PushMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_PASS_THROUGH_MESSAGElogan"/>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_PASS_THROUGH_MESSAGE.SHARK_PUSH_LOGAN"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:label="开发者模式"
+            android:name="com.sankuai.meituan.dev.horn.HornConfigActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/hornconfig"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.HornConfigEditActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.sankuai.meituan.dev.horn.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/hornedit"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.HornConfigListActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/hornconfiglist"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.RecentConfigActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/recentconfig"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.FocusConfigListActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/focusconfig"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.HornPostDetailActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/postdetail"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/HornAppTheme"
+            android:name="com.sankuai.meituan.dev.horn.HornUninitializedListActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/dev/uninitialized"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.meituan.android.common.horn.HornPushReceiver"
+            android:exported="false"
+            android:process=":dppushservice">
+            <intent-filter>
+                <action android:name="com.dianping.dpmtpush.RECEIVE_PASS_THROUGH_MESSAGEhorn"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.meituan.android.common.horn.HornPushService"
+            android:exported="false"
+            android:process=":dppushservice"/>
+        <service
+            android:name="com.meituan.android.patch_service.PatchService"
+            android:exported="false"
+            android:process=":patch_serivce">
+            <intent-filter>
+                <action android:name="com.meituan.android.patch.action.PATCH"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.meituan.android.downloadmanager.MultiDownloadService"
+            android:exported="true"
+            android:process=":download"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.meituan.banma.permission.PermissionActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.sankuai.sailor.courier.firebaseinitprovider"
+            android:initOrder="100"/>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:exported="false"
+            android:multiprocess="true"
+            android:authorities="com.sankuai.sailor.courier.lifecycle-process"/>
+        <activity
+            android:name="com.sankuai.meituan.arbiter.debug.ErrInfoActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="imeituan"
+                    android:host="www.meituan.com"
+                    android:path="/arbiter/errinfo"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"/>
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/Theme.PlayCore.Transparent"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2"/>
+    </application>
+</manifest>

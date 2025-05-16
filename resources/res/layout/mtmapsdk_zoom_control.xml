@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/mtmapsdk_round_white_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_zoom_in"
+        android:padding="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="0x7f080204"
+        android:scaleType="fitCenter"/>
+    <View
+        android:background="#ff999999"
+        android:layout_width="15dp"
+        android:layout_height="0.5dp"/>
+    <ImageView
+        android:id="@+id/img_zoom_out"
+        android:padding="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="0x7f080205"/>
+</LinearLayout>

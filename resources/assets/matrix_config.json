@@ -1,0 +1,29 @@
+{
+  "ble": {
+    "collectSwitch": 1,
+    "reportFrequency": 3,
+    "collectFrequency": 10000,
+    "scanDuration": 5000,
+    "maxCount": 20,
+    "privacyToken": "sailor_d_privacy_token"
+  },
+  "lowFrequency": {
+    "collectSwitch": 1,
+    "reportFrequency": 3,
+    "collectFrequency": 5000,
+    "maxCount": 20,
+    "privacyToken": "sailor_d_privacy_token",
+    "items": [
+      "stepCounter",
+      "pressure",
+      "activityType",
+      "brightness",
+      "proximity"
+    ]
+  },
+  "poiBeacon": {
+    "collectSwitch": 1,
+    "reportFrequency": 3,
+    "privacyToken": "sailor_d_privacy_token"
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/preview_parent_view"
+    android:background="@color/mbar_activity_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.meituan.android.edfu.mbar.view.EdfuCameraSurface
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:cameraFacing="front"
+        app:cameraRatio="16:9"
+        app:flashMode="off"/>
+    <View
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

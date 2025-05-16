@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="12dp">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#1f7cff"
+        android:id="@+id/tv_origin_translate_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="#bfbfbf"
+        android:id="@+id/tv_translate_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_origin_translate_switch"
+        app:layout_constraintTop_toTopOf="@+id/iv_google"/>
+    <ImageView
+        android:id="@+id/iv_google"
+        android:layout_width="47.3dp"
+        android:layout_height="18dp"
+        android:src="@drawable/im_ic_google"
+        android:scaleType="centerInside"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_origin_translate_switch"
+        app:layout_constraintStart_toEndOf="@+id/tv_translate_by"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

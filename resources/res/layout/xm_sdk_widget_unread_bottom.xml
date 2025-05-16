@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/xm_sdk_bg_message_unread_bottom"
+    android:visibility="invisible"
+    android:layout_width="36dp"
+    android:layout_height="41dp"
+    android:layout_marginBottom="15dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="17dp"
+    android:layout_alignParentEnd="true">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#166ff7"
+        android:gravity="center"
+        android:id="@+id/xm_sdk_btn_unread_bottom"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/xm_sdk_text_view_style_18n"/>
+</RelativeLayout>

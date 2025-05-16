@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottom_sheets_list_layout"
+    android:background="@color/commonui_bottomsheets_list_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/commonui_bottomsheets_listitem_title_size"
+        android:textColor="@color/commonui_bottomsheets_list_title_color"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/bottom_sheets_title"
+        android:background="@color/commonui_bottomsheets_list_background"
+        android:paddingLeft="@dimen/commonui_bottomsheets_listitem_title_paddingleft"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/commonui_bottomsheets_title_height"
+        android:maxLines="1"/>
+    <View
+        android:background="@color/commonui_bottomsheets_title_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bottom_sheets_list_recycle"
+        android:background="@color/commonui_bottomsheets_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:listSelector="#efefef"
+        android:numColumns="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

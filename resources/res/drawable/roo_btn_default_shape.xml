@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="0dp"
+    android:insetRight="0dp"
+    android:insetTop="@dimen/roo_btn_inset"
+    android:insetBottom="@dimen/roo_btn_inset">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/roo_btn_corner_radius"/>
+        <gradient
+            android:startColor="@color/roo_btn_background_gradient_start_color"
+            android:endColor="@color/roo_btn_background_gradient_end_color"
+            android:angle="45"
+            android:centerX="0.5"
+            android:centerY="0.5"/>
+    </shape>
+</inset>

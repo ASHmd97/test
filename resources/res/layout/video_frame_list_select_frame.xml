@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@drawable/video_frame_list_cursor_background"
+        android:layout_width="5dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="67dp"
+        android:src="@drawable/video_frame_list_arrow_icon"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

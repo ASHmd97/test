@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.sailor.infra.commons.widget.AnimatableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/icon_common_bg_progress_round"
+    android:layout_width="@dimen/common_progress_round_width"
+    android:layout_height="@dimen/common_progress_round_height"
+    android:scaleType="centerInside"
+    app:drawableRes="@drawable/common_progress_rotate"/>

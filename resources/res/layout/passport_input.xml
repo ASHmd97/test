@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+    <EditText
+        android:textSize="15sp"
+        android:textColor="@color/passport_text_black"
+        android:textColorHint="#33000000"
+        android:id="@+id/et_input"
+        android:background="#00000000"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:textCursorDrawable="@drawable/passport_input_cursor_color"
+        android:textDirection="ltr"
+        android:textAlignment="textStart"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/iv_text_visible"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/passport_input_text_visible"/>
+</LinearLayout>

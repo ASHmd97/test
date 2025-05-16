@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sales_promotion_container"
+    android:layout_width="wrap_content"
+    android:layout_height="15dp">
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/commonui_white"
+        android:gravity="center"
+        android:id="@+id/promotion_festival"
+        android:background="@drawable/commonui_sales_promotion_text"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/commonui_orange"
+        android:gravity="center"
+        android:id="@+id/promotion_detail_text"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@+id/promotion_festival"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+{
+    "lowFrequency": {
+        "items": [
+            "stepCounter",
+            "pressure",
+            "activityType",
+            "brightness",
+            "proximity"
+        ],
+        "collectSwitch": 1,
+        "reportSwitch": 0,
+        "featureSwitch": 1,
+        "collectFrequency": 5000,
+        "featureExpireTime": 180,
+        "maxCount": 20,
+        "reportFrequency": 3,
+        "privacyToken": "xxxxxx"
+    },
+    "highFrequency": {
+        "items": [
+            "accelerometer",
+            "gravity",
+            "gyroscope",
+            "magnetic_field",
+            "rotation_vector",
+            "game_rotation_vector"
+        ],
+        "collectSwitch": 1,
+        "reportSwitch": 0,
+        "featureSwitch": 1,
+        "collectFrequency": 50,
+        "featureExpireTime": 30,
+        "reportFrequency": 3,
+        "privacyToken": "xxxxxx"
+    },
+    "ble": {
+        "collectSwitch": 1,
+        "reportSwitch": 0,
+        "featureSwitch": 1,
+        "collectFrequency": 10000,
+        "scanDuration": 5000,
+        "featureExpireTime": 180,
+        "maxCount": 20,
+        "reportFrequency": 3,
+        "privacyToken": "xxxxxx"
+    },
+    "wifi": {
+        "collectSwitch": 0,
+        "reportSwitch": 1,
+        "featureSwitch": 1,
+        "collectFrequency": 15000,
+        "featureExpireTime": 180,
+        "maxCount": 20,
+        "reportFrequency": 3,
+        "privacyToken": "xxxxxx"
+    },
+    "location": {
+        "items": [
+            "gps",
+            "cellTower",
+            "satellite"
+        ],
+        "collectSwitch": 1,
+        "reportSwitch": 0,
+        "featureSwitch": 1,
+        "collectFrequency": 1000,
+        "featureExpireTime": 180,
+        "maxCount": 20,
+        "reportFrequency": 3,
+        "privacyToken": "xxxxxx"
+    }
+}

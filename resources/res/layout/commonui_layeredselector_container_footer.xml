@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/commonui_action_bar_tab_selector_default_color"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <TextView
+        android:textSize="@dimen/commonui_text_size_h5"
+        android:textColor="@color/commonui_title_color"
+        android:gravity="center"
+        android:id="@+id/reset"
+        android:background="@drawable/commonui_layeredselector_resetbtn_background"
+        android:clickable="true"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:text="重置"/>
+    <TextView
+        android:textSize="@dimen/commonui_text_size_h5"
+        android:textColor="@color/commonui_title_color"
+        android:gravity="center"
+        android:id="@+id/commit"
+        android:background="@drawable/commonui_layeredselector_commitbtn_background"
+        android:clickable="true"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="9dp"
+        android:text="完成"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

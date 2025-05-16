@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cb_background">
+        <shape android:shape="oval">
+            <solid android:color="@color/roo_cb_bg_solid_color_default"/>
+            <size
+                android:height="@dimen/roo_cb_bg_height_default"
+                android:width="@dimen/roo_cb_bg_width_default"/>
+        </shape>
+    </item>
+</layer-list>

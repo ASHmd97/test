@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/view_audit"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/fl_unregister_toolbar_layout"
+            android:background="@drawable/bg_audit_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/fl_unregister_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+                <ImageView
+                    android:layout_gravity="start|center_vertical"
+                    android:id="@+id/iv_sidebar"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/side_bar_icon"/>
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keeta"/>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/view_main_audit_unregister"/>
+            <include layout="@layout/view_main_audit_waiting"/>
+            <com.sankuai.sailor.homepage.view.LoadingView
+                android:id="@+id/loading_view"
+                android:background="@color/color_d2d2d2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sankuai.sailor.infra.commons.widget.loading.AnimatedArcView
+        android:layout_gravity="center"
+        android:id="@+id/refresh_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:firstCircleColor="@color/firstCircleColor"
+        app:lineStoke="3dp"
+        app:secondCircleColor="@color/secondCircleColor"/>
+</FrameLayout>

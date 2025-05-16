@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="keyboard_normal_drawable">@color/white</drawable>
+    <drawable name="keyboard_press_drawable">#e2e2e2</drawable>
+    <drawable name="msi_button_normal">#ffffff</drawable>
+    <drawable name="msi_button_pressed">#cccccc</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>

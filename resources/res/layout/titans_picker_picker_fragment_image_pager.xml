@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sankuai.titans.widget.rtlViewPager.RtlViewPager
+        android:id="@+id/vp_photos"
+        android:background="@color/__picker_pager_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textColor="@color/__picker_common_primary"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/vp_indicate"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:textColor="@color/__picker_common_primary"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/vp_hint"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+</FrameLayout>

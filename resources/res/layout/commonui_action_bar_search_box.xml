@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/commonui_action_bar_bg_search_box"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/commonui_action_bar_ll_search_box_h"
+    android:layout_weight="1">
+    <ImageView
+        android:id="@+id/iv_search_icon"
+        android:layout_width="13.5dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/commonui_action_bar_ic_search"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/commonui_secondary_messages_color"
+        android:gravity="center"
+        android:id="@+id/tv_search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"/>
+</LinearLayout>

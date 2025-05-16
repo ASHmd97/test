@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/xm_sdk_chat_msg_img_holder_bg"/>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/xm_sdk_ic_emotion_failed"
+        android:left="48dp"
+        android:top="39dp"
+        android:right="48dp"
+        android:bottom="39dp"/>
+</layer-list>

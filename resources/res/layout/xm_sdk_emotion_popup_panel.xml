@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/xm_sdk_bg_emotion_preview_panel"
+    android:padding="9dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.sankuai.xm.imui.common.view.AdaptiveImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/xm_sdk_image_view"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#61000000"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/xm_sdk_image_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        style="@style/xm_sdk_text_view_style_18n"/>
+</LinearLayout>

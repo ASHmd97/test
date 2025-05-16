@@ -1,0 +1,131 @@
+{
+  "SailorC": {
+    "HK": {
+      "loginType": [
+        "mail"
+      ],
+      "thirdLogin": [
+        "Facebook",
+        "Apple",
+        "Google"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "mail"
+      ]
+    }
+  },
+  "SailorB": {
+    "HK": {
+      "loginType": [
+        "mail"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "mail"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "mail"
+      ]
+    }
+  },
+  "SailorD": {
+    "HK": {
+      "loginType": [
+        "mail"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "mail"
+      ]
+    }
+  },
+  "osgRider": {
+    "HK": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "phone"
+      ]
+    }
+  },
+  "osgTms": {
+    "HK": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "phone"
+      ]
+    }
+  },
+  "osgClove": {
+    "HK": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "phone"
+      ]
+    }
+  },
+  "osgAgreenmentLauncher": {
+    "HK": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "SA": {
+      "loginType": [
+        "phone"
+      ]
+    },
+    "default": {
+      "loginType": [
+        "phone"
+      ]
+    }
+  },
+  "default": {
+    "loginType": [
+      "mail"
+    ]
+  }
+}

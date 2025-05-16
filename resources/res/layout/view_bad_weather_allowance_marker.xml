@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/bg_white_radius_12_5"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_vehicle"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:src="@drawable/ic_car"
+            android:rotationY="@integer/rotation"
+            android:layout_marginStart="3dp"/>
+        <TextView
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1a1a1a"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="10dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="-1dp"
+        android:src="@drawable/ic_white_arrow_down"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/yoda_confirm_help"
+        android:id="@+id/yoda_help"
+        android:title="问题反馈"/>
+    <item
+        android:icon="@drawable/yoda_confirm_change_verify"
+        android:id="@+id/yoda_change_verify"
+        android:title="切换验证方式"/>
+</menu>

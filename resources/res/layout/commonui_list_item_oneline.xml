@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="0dp"
+    android:layout_height="45dp"
+    android:layout_weight="1">
+    <ImageView
+        android:id="@+id/commonui_list_item_image"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="12dp"/>
+    <TextView
+        android:textSize="@dimen/commonui_text_size_h6"
+        android:textColor="@color/commonui_title_color"
+        android:ellipsize="end"
+        android:id="@+id/commonui_list_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        android:layout_weight="1"/>
+    <TextView
+        android:textSize="@dimen/commonui_text_size_h4"
+        android:ellipsize="end"
+        android:id="@+id/commonui_list_item_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:maxLength="10"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/commonui_list_item_rightarrow"
+        android:background="@drawable/commonui_list_item_ic_arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

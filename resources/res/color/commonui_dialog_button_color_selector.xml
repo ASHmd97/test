@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:color="@color/commonui_link_color"/>
+    <item
+        android:state_enabled="false"
+        android:color="@color/commonui_dialog_button_disable"/>
+</selector>

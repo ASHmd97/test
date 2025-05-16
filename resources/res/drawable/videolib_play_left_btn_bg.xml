@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="11.5dp">
+        <rotate
+            android:fromDegrees="315"
+            android:toDegrees="0"
+            android:pivotX="45%"
+            android:pivotY="45%">
+            <shape>
+                <solid android:color="@color/videolib_main_color"/>
+                <size
+                    android:height="2dp"
+                    android:width="20dp"/>
+            </shape>
+        </rotate>
+    </item>
+    <item android:top="11.5dp">
+        <rotate
+            android:fromDegrees="45"
+            android:toDegrees="0"
+            android:pivotX="45%"
+            android:pivotY="45%">
+            <shape>
+                <solid android:color="@color/videolib_main_color"/>
+                <size
+                    android:height="2dp"
+                    android:width="20dp"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

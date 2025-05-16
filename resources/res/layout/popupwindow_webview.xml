@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_popupwindow_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="config"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_name">
+        <TextView
+            android:textSize="14dp"
+            android:textColor="#000"
+            android:id="@+id/tv_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="90dp"
+    android:width="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="90">
+    <path
+        android:fillColor="#f4f5f7"
+        android:pathData="M30,30h66v60h-66z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_xm_sdk_vd_del_btn_mask__0_res_0x7f080007"
+        android:pathData="M30,0h66v30h-66z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_xm_sdk_vd_del_btn_mask__1_res_0x7f080008"
+        android:pathData="M30,0L30,30L0,30L0,30C0,13.4315 13.4315,0 30,0Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_xm_sdk_vd_del_btn_mask__2_res_0x7f080009"
+        android:pathData="M0,30l0,60l30,0l0,-60z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1"
+        android:fillType="evenOdd"/>
+</vector>

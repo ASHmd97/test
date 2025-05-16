@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/xm_sdk_send_panel_normal_style">
+    <com.sankuai.sailor.oversea.im.plugin.PlusPlugin
+        android:id="@+id/plus_plugin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <com.sankuai.sailor.oversea.im.plugin.QuickReplyPlugin
+        android:id="@+id/quick_reply_plugin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <com.sankuai.xm.imui.common.panel.plugin.InputEditorPlugin
+        android:id="@+id/editor_plugin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <com.sankuai.sailor.oversea.im.plugin.SendBtnPlugin
+        android:id="@+id/send_plugin"
+        android:tag="SEND"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</LinearLayout>

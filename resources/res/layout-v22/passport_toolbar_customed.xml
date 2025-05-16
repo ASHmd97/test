@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:background="#00ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    app:contentInsetStart="0dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_gravity="start"
+        android:id="@+id/close_button"
+        android:background="@drawable/passport_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:rotationY="@integer/rotation"
+        android:layout_marginStart="10dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_gravity="end"
+        android:id="@+id/help_button"
+        android:background="@drawable/passport_customer_service"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+</androidx.appcompat.widget.Toolbar>

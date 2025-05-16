@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/snackbar_text"
+        android:paddingTop="@dimen/snackbar_design_padding_vertical_mt"
+        android:paddingBottom="@dimen/snackbar_design_padding_vertical_mt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="182dp"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/snackbar_action"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/snackbar_design_extra_spacing_horizontal_mt"
+        android:minWidth="48dp"
+        android:layout_marginStart="@dimen/snackbar_design_extra_spacing_horizontal_mt"/>
+</merge>

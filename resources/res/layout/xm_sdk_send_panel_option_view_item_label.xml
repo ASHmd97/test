@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="12sp"
+    android:textColor="#e6000000"
+    android:gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="3dp"
+    android:text="@string/xm_sdk_emotion_recent"
+    android:layout_marginStart="6dp"
+    style="@style/xm_sdk_text_view_style_18n"/>

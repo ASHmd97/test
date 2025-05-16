@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/rb_background">
+        <shape android:shape="oval">
+            <solid android:color="@color/roo_rb_bg_solid_color_default"/>
+            <size
+                android:height="@dimen/roo_rb_bg_height_default"
+                android:width="@dimen/roo_cb_bg_width_default"/>
+            <stroke
+                android:width="@dimen/roo_cb_icon_stroke_width"
+                android:color="@color/roo_rb_icon_color_enable_check_default"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/rb_icon">
+        <shape
+            android:shape="oval"
+            android:useLevel="true">
+            <solid android:color="@color/roo_rb_icon_color_enable_check_default"/>
+            <size
+                android:height="@dimen/roo_rb_icon_height_default"
+                android:width="@dimen/roo_rb_icon_width_default"/>
+        </shape>
+    </item>
+</layer-list>

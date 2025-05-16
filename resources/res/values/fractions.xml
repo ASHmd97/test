@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="roo_bottomsheet_max_height_percent">80%</fraction>
+    <fraction name="roo_bottomsheet_min_height_percent">0%</fraction>
+</resources>

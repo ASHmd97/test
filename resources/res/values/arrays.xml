@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dev_cs_env_list">
+        <item>Prod环境</item>
+        <item>Stage环境</item>
+        <item>Beta环境</item>
+        <item>Test环境</item>
+    </array>
+    <array name="dev_cs_env_list_data">
+        <item>env_prod</item>
+        <item>env_st</item>
+        <item>env_beta</item>
+        <item>env_test</item>
+    </array>
+    <array name="dianping_shark_tunnels">
+        <item>线上配置默认通道(android默认CIP)</item>
+        <item>HTTP通道</item>
+        <item>CIP通道(Failover)</item>
+        <item>WNS通道</item>
+    </array>
+    <array name="dianping_shark_tunnels_data">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+    </array>
+    <array name="hertz_mode">
+        <item>Debug</item>
+        <item>QA</item>
+        <item>Release</item>
+    </array>
+    <array name="hotel_no_persistent_env_list">
+        <item>线上环境</item>
+        <item>Test环境(HotelApi - Http)</item>
+        <item>Test环境(HotelApi - Https)</item>
+        <item>Stage环境(HotelApi - Http)</item>
+        <item>Stage环境(HotelApi - Https)</item>
+    </array>
+    <array name="hotel_no_persistent_env_list_data">
+        <item>-1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+    </array>
+    <array name="simulate_network_timeout_list">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </array>
+    <array name="xm_sdk_extra_plugins">
+    </array>
+    <array name="xm_sdk_msg_week">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </array>
+</resources>

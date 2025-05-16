@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="333">
+        <rotate
+            android:drawable="@drawable/xm_sdk_vd_voice_l3"
+            android:fromDegrees="180"
+            android:toDegrees="180"
+            android:pivotX="50%"
+            android:pivotY="50%"/>
+    </item>
+    <item android:duration="333">
+        <rotate
+            android:drawable="@drawable/xm_sdk_vd_voice_l1"
+            android:fromDegrees="180"
+            android:toDegrees="180"
+            android:pivotX="50%"
+            android:pivotY="50%"/>
+    </item>
+    <item android:duration="333">
+        <rotate
+            android:drawable="@drawable/xm_sdk_vd_voice_l2"
+            android:fromDegrees="180"
+            android:toDegrees="180"
+            android:pivotX="50%"
+            android:pivotY="50%"/>
+    </item>
+</animation-list>

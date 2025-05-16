@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="safe_mode">Safe Mode
+    </string>
+    <string name="safe_mode_try_fix">Multiple crashes have been detected. \10e are analyzing the problem and attempting to fix it.
+    </string>
+    <string name="safe_mode_has_fix">We have attempted to fix the problem. Please tap the button below. \10Restart app
+    </string>
+    <string name="safe_mode_has_clean">Cached data has been cleared. Tap the button below to restart the app. \10If the problem persists after restarting, we recommend:：
+    </string>
+    <string name="safe_mode_need_upgrade">Your current app version is too low, which may cause the app to crash. \10To avoid any problems, please update the app to the latest version.
+    </string>
+    <string name="safe_mode_solution_1">Method 1: Try reinstalling the app and restarting your phone
+    </string>
+    <string name="safe_mode_solution_2">Submit feedback to the email address at the bottom of the screen
+    </string>
+    <string name="safe_mode_restart_app">Restart app
+    </string>
+    <string name="safe_mode_to_upgrade">Update now
+    </string>
+    <string name="safe_mode_exit">Exit
+    </string>
+    <string name="safe_mode_customer_service_phone_number">mailto:myservice_customer@mykeeta.com
+    </string>
+    <string name="safe_mode_hotfix_failure">Fix failed. Please exit and try again.t
+    </string>
+</resources>

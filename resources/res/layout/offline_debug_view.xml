@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/offline_global"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/offline_global_debug"/>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/offline_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/offline_current_debug"/>
+</merge>

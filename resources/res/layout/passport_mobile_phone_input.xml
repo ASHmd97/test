@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+    <LinearLayout
+        android:id="@+id/ll_country_code_selector"
+        android:background="@drawable/passport_input_bg_normal"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layoutDirection="ltr">
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/passport_text_black"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/tv_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textDirection="ltr"/>
+        <ImageView
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/icon_code_arrow"
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:src="@drawable/right_arrow"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+    <com.meituan.passport.oversea.view.PassportInput
+        android:id="@+id/pi_input_phone"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        app:passportInputType="phone"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="safe_mode">安全模式
+    </string>
+    <string name="safe_mode_try_fix">检测到美团多次闪退，\10正在为您分析问题并尝试修复。
+    </string>
+    <string name="safe_mode_has_fix">已为您尝试修复问题，请点击下方按钮\10重启美团
+    </string>
+    <string name="safe_mode_has_clean">已为您清理缓存数据，请点击下方按钮重启美团。\10如重启后仍存在问题，建议：
+    </string>
+    <string name="safe_mode_need_upgrade">检测到您当前美团版本较低，可能造成闪退。\10为了您的体验，请将美团更新至最新版本。
+    </string>
+    <string name="safe_mode_solution_1">方法一 尝试重新安装并重启手机
+    </string>
+    <string name="safe_mode_solution_2">方法二 微信小程序搜索【美团】
+    </string>
+    <string name="safe_mode_restart_app">重启美团
+    </string>
+    <string name="safe_mode_to_upgrade">去更新
+    </string>
+    <string name="safe_mode_exit">退出
+    </string>
+    <string name="safe_mode_customer_service_phone_number">客服电话: 10107888
+    </string>
+    <string name="safe_mode_hotfix_failure">修复失败 请退出重试
+    </string>
+</resources>

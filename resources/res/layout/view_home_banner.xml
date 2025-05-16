@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_banner_view"
+    android:background="@drawable/bg_home_banner_container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_alignParentBottom="true">
+    <fragment
+        android:name="com.sankuai.sailor.homepage.view.fragment.HomeBannerFragment"
+        android:layout_gravity="start"
+        android:id="@+id/home_banner_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"/>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/xm_sdk_msg_forward_by_one_pressed"/>
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/xm_sdk_msg_forward_by_one_pressed"/>
+    <item
+        android:drawable="@drawable/xm_sdk_msg_forward_by_one_pressed"
+        android:state_activated="true"/>
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/xm_sdk_msg_forward_by_one_pressed"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/xm_sdk_msg_forward_by_one"/>
+    <item android:drawable="@drawable/xm_sdk_msg_forward_by_one"/>
+</selector>

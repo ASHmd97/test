@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="chat_images"
+        path="Pictures/DaXiang_Chat/"/>
+    <external-path
+        name="chat_images_cips"
+        path="."/>
+    <root-path
+        name="root"
+        path=""/>
+</paths>
